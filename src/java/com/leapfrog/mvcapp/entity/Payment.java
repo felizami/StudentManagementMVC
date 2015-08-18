@@ -12,20 +12,20 @@ import java.sql.Timestamp;
  * @author Anuz
  */
 public class Payment {
-   private int payementId;
+   private int paymentId;
    private int enrollmentId;
    private Double amount;
-   private Timestamp payementDate;
+   private Timestamp paymentDate;
 
     public Payment() {
     }
 
     public int getPayementId() {
-        return payementId;
+        return paymentId;
     }
 
     public void setPayementId(int payementId) {
-        this.payementId = payementId;
+        this.paymentId = payementId;
     }
 
     public int getEnrollmentId() {
@@ -45,16 +45,16 @@ public class Payment {
     }
 
     public Timestamp getPayementDate() {
-        return payementDate;
+        return paymentDate;
     }
 
     public void setPayementDate(Timestamp payementDate) {
-        this.payementDate = payementDate;
+        this.paymentDate = payementDate;
     }
 
     @Override
     public String toString() {
-        return "Payment{" + "payementId=" + payementId + ", enrollmentId=" + enrollmentId + ", amount=" + amount + ", payementDate=" + payementDate + '}';
+        return "Payment{" + "payementId=" + paymentId + ", enrollmentId=" + enrollmentId + ", amount=" + amount + ", payementDate=" + paymentDate + '}';
     }
    
    
