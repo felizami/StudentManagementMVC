@@ -13,4 +13,5 @@ import com.leapfrog.mvcapp.entity.Student;
  */
 public interface StudentDAO extends GenericDAO<Student> {
     
+    
 }
