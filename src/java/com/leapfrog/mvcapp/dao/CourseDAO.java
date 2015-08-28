@@ -6,7 +6,7 @@
 package com.leapfrog.mvcapp.dao;
 
 import com.leapfrog.mvcapp.entity.Course;
-import java.util.List;
+
 
 /**
  *
