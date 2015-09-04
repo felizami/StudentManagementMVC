@@ -6,6 +6,7 @@
 package com.leapfrog.mvcapp.api;
 
 import com.leapfrog.mvcapp.service.CourseService;
+import javax.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,5 +30,10 @@ public class CourseAPI {
         map.addAttribute("CourseList",courseService.getAll());
         return map;
     }
-    
+    @RequestMapping(method = RequestMethod.POST)
+    public String postCourse(HttpServletRequest request){
+        String name = request.getParameter("name");
+        System.out.println(name);
+        return name;
+    }
 }
